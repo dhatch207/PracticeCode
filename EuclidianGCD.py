@@ -2,8 +2,6 @@
 # Math sourced from Elementary Number Theory by Kenneth H. Rosen
 # 2020 Dominic Hatch dhatch207 dmh207@gmail.com
 
-import math
-
 def compute(x,y):
     p = x
     q = y
@@ -31,4 +29,5 @@ def main():
     y = int(input())
     print("GCD:")
     print(compute(x,y))
+
 main()
