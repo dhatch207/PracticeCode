@@ -2,7 +2,7 @@
 # Math sourced from Elementary Number Theory by Kenneth H. Rosen
 # 2020 Dominic Hatch dhatch207 dmh207@gmail.com
 
-def compute(x,y):
+def EuclidianGCD(x,y):
     p = x
     q = y
     if x == y: return y
@@ -28,6 +28,7 @@ def main():
     print("Second number:")
     y = int(input())
     print("GCD:")
-    print(compute(x,y))
+    print(EuclidianGCD(x,y))
 
-main()
+if __name__ == "__main__":
+   main()
