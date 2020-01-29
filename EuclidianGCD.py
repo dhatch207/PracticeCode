@@ -10,12 +10,20 @@ def EuclidianGCD(x,y):
         p = y
         q = x
 
-    s = p % q
+    r = p % q
     
-    while s != 0:
+    while r != 0:
+        c = int(p / q) 
+        print(f"{p} = ({c}){q} + {r}")
         p = q
-        q = s
-        s = p % q
+        q = r
+        r = p % q
+    
+    print(f"{p} = ({c}){q} + {r}")
+
+    print(f"GCD: {q}")
+    print(f"{x} = ({int(x/q)}){q}")
+    print(f"{y} = ({int(y/q)}){q}")
 
     return q
 
@@ -27,8 +35,8 @@ def main():
     x = int(input())
     print("Second number:")
     y = int(input())
-    print("GCD:")
-    print(EuclidianGCD(x,y))
+
+    (EuclidianGCD(x,y))
 
 if __name__ == "__main__":
    main()
